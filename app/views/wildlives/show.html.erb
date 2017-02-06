@@ -1,3 +1,5 @@
 <h1><%= @wildlife.name %></h1>
 
 <p><%= link_to "Return to wildlives", wildlives_path %></p>
+<p><%= link_to "Delete", wildlife_path(@wildlife), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+<p><%= link_to "Edit", edit_wildlife_path(@wildlife) %></p>

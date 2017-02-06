@@ -2,8 +2,9 @@
 
 <ul>
   <%@wildlives.each do |w|  %>
-    <li><%= link_to w.name, wildlife(w)%></li>
+    <li><%= link_to w.name, wildlife_path(w)%></li>
   <% end %>
 </ul>
+
 
 <%= link_to "New Wildlife", new_wildlife_path %>

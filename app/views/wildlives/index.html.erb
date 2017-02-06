@@ -1,0 +1,9 @@
+<h1>Something</h1>
+
+<ul>
+  <%@wildlives.each do |w|  %>
+    <li><%= link_to w.name, wildlife(w)%></li>
+  <% end %>
+</ul>
+
+<%= link_to "New Wildlife", new_wildlife_path %>

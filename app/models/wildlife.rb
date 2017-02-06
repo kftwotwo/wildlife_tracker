@@ -1,3 +1,3 @@
-class Wildlife < ApplicationRecord
+class Wildlife < ActiveRecord::Base
   validates :name, :presence => true
 end

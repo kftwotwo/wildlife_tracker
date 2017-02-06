@@ -1,4 +1,10 @@
 class SightingsController < ApplicationController
+  def show
+    @wildlife = Wildlife.find(params[:wildlife_id])
+    @sighting = Sighting.find(params[:id])
+    render :show
+  end
+
   def new
     @wildlife = Wildlife.find(params[:wildlife_id])
     @sighting = @wildlife.sightings.new
@@ -29,6 +35,13 @@ class SightingsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @wildlife = Wildlife.find(params[:wildlife_id])
+    @sighting = Sighting.find(params[:id])
+    @sighting.destroy
+    redirect_to wildlife_path(@sighting.wildlife)
   end
 
 private

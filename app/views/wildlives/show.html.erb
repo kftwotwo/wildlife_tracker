@@ -1,5 +1,16 @@
 <h1><%= @wildlife.name %></h1>
 
+<% if @wildlife.sightings.any? %>
+  <h4>Sightings:</h4>
+  <ul>
+    <% @wildlife.sightings.each do |s| %>
+    <li><%= s.date %></li>
+    <% end %>
+  </ul>
+<% else %>
+
+<% end %>
+
 <p><%= link_to "Return to wildlives", wildlives_path %></p>
 <p><%= link_to "Delete", wildlife_path(@wildlife), :data => {:confirm => "You sure?", :method => "delete"} %></p>
 <p><%= link_to "Edit", edit_wildlife_path(@wildlife) %></p>

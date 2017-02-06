@@ -1,5 +1,6 @@
 class SightingsController < AppicationController
-  def index
-    @sightings = Sighting.all
+  def new
+    @sighting = Sighting.new
+    render :new
   end
 end

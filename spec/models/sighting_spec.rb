@@ -1,5 +1,5 @@
 require 'rails_helper'
-describe Specie do
+describe Sighting do
   it {
     should validate_presence_of :date
     should validate_presence_of :latitude

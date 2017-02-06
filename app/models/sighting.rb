@@ -1,3 +1,3 @@
-class Specie < ActiveRecord::Base
+class Sighting < ActiveRecord::Base
   validates :date, :latitude, :longitude, :presence => true
 end

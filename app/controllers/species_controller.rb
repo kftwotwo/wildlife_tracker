@@ -1,5 +1,5 @@
-class SpeciciesController < AppicationController
+class SightingsController < AppicationController
   def index
-    @species = Specie.all
+    @sightings = Sighting.all
   end
 end

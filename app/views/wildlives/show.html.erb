@@ -3,14 +3,15 @@
 <% if @wildlife.sightings.any? %>
   <h4>Sightings:</h4>
   <ul>
-    <% @wildlife.sightings.each do |s| %>
-    <li><%= s.date %></li>
+    <% @wildlife.sightings.each do |sighting| %>
+    <li><%= sighting.date %> | <%= link_to "Edit", edit_wildlife_sighting_path(@wildlife, sighting) %></li>
     <% end %>
   </ul>
 <% else %>
 
 <% end %>
 
+<p><%= link_to "Add a Sighting", new_wildlife_sighting_path(@wildlife) %></p>
 <p><%= link_to "Return to wildlives", wildlives_path %></p>
 <p><%= link_to "Delete", wildlife_path(@wildlife), :data => {:confirm => "You sure?", :method => "delete"} %></p>
 <p><%= link_to "Edit", edit_wildlife_path(@wildlife) %></p>

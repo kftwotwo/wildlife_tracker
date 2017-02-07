@@ -25,11 +25,11 @@ If you notice any bugs or problems you can fill out an issue [here](http://www.g
 
 ## Contact details
 Kevin Finley:  
-```
+
   Gmail: kftwotwo@gmail.com  
   Github: [kftwotwo](https://www.github.com/kftwotwo)  
   Linkedin: [kftwotwo](https://www.linkedin.com/in/kftwotwo/)
-```
+
 ## Contribute
 
 If you wish to contribute create an issue and describe your idea then fork it and submit a pull request!

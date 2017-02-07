@@ -7,6 +7,6 @@
   <%= f.text_field :latitude %>
   <%= f.label :longitude %>
   <%= f.text_field :longitude %>
-  <%= f.select(:region, options_for_select([['Region 1', 'Region 1'],['Region 2', 'Region 2'], ['Region 3', 'Region 3']])) %>
-  <%= f.submit %>
+  <%= f.select(:region, options_for_select([['Region 1', 'Region 1'],['Region 2', 'Region 2'], ['Region 3', 'Region 3']]), {}, { :class => 'browser-default drop-margin' } ) %>
+  <%= f.submit :class => 'btn' %>
 <% end %>

@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wild</title>
+    <title>Wildlife Sightings Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <nav class="green darken-4">
+   <div class="nav-wrapper">
+     <%= link_to "Home", root_path, :class => "brand-logo" %>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li><%= link_to "Wildlife", wildlives_path %></li>
+       <li><%= link_to "About", about_path %></li>
+     </ul>
+   </div>
+  </nav>
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

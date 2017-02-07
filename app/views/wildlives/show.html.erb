@@ -4,7 +4,7 @@
   <h4>Sightings:</h4>
   <ul>
     <% @wildlife.sightings.each do |sighting| %>
-    <li><%= link_to sighting.date, wildlife_sighting_path(@wildlife, sighting) %> | <%= link_to "Edit", edit_wildlife_sighting_path(@wildlife, sighting) %> | <%= link_to "Delete", wildlife_sighting_path(@wildlife, sighting), :data => {:confirm => "Are you sure?", :method => "delete"} %></li>
+    <li><%= link_to sighting.date, wildlife_sighting_path(@wildlife, sighting) %> | <%= link_to "Edit Sighting", edit_wildlife_sighting_path(@wildlife, sighting) %> | <%= link_to "Delete", wildlife_sighting_path(@wildlife, sighting), :data => {:confirm => "Are you sure?", :method => "delete"} %></li>
     <% end %>
   </ul>
 <% else %>

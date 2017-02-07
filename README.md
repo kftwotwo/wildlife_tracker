@@ -24,7 +24,10 @@ url: localhost:3000
 If you notice any bugs or problems you can fill out an issue [here](http://www.github.com/kftwotwo/wildlife_tracker/issues) or feel free to submit a pull request.
 
 ## Contact details
-
+Kevin
+  Gmail: kftwotwo@gmail.com
+  Github: [kftwotwo](https://www.github.com/kftwotwo)
+  Linkedin [kftwotwo](https://www.linkedin.com/in/kftwotwo/)
 
 ## Contribute
 
